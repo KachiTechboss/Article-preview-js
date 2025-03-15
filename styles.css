@@ -92,6 +92,7 @@ body {
     animation: bubbleHop 1.75s ease-in-out;
     animation-delay: 1.25s;
     animation-iteration-count: infinite;
+    overflow-x: hidden;
   }
   .author-social-icon:hover{
     animation-play-state: paused;
