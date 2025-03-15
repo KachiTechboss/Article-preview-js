@@ -1,0 +1,305 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 10px 10px 32px rgba(72, 85, 106, 0.1);
+    width: 800px;
+  
+    display: flex;
+  }
+  span{
+    color:  hsl(214, 17%, 51%);
+  }
+  .img-container {
+    display: flex;
+    align-items: stretch;
+    width: 40%;
+    height: 300px;
+  }
+  .img-container img {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    height: 100%;
+  }
+  
+.image-drawer {
+  width: 100%;
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+  .articel-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
+    width: 60%;
+    height: 300px;
+    padding-bottom: 0;
+  }
+  h1 {
+    color: hsl(217, 19%, 35%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .author-details {
+    position: relative;
+  }
+  .description {
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 1.5rem;
+  }
+  .author-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+  }
+  .author-img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .author-img img {
+    border-radius: 50px;
+    height: 50px;
+  }
+  .author-social-icon {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0.8rem;
+    box-shadow: 10px 10px 32px rgba(72, 85, 106, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 0.6rem 2rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: -50px;
+    right: -230px;
+    transform: translate(-50%, -50%);
+    animation: bubbleHop 1.75s ease-in-out;
+    animation-delay: 1.25s;
+    animation-iteration-count: infinite;
+  }
+  .author-social-icon:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  @keyframes bubbleHop {
+    from {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(.3rem);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .author-social-link {
+    position: relative;
+  }
+  .share-icon {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.6rem;
+    /* display: none; */
+  }
+  .share-icon2 {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.6rem;
+    display: none;
+  }
+  .name {
+    color: hsl(217, 19%, 35%);
+    font-size: 700;
+  }
+  .date {
+    color: hsl(212, 23%, 69%);
+    font-size: 0.8rem;
+  }
+  
+  .share img {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.6rem;
+    display: none;
+  }
+  .social-share {
+    color: hsl(212, 23%, 69%);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1006px) {
+    .author-social-icon {
+      right: -200px;
+    }
+  }
+  @media (max-width: 922px) {
+    .author-social-icon {
+      right: -160px;
+    }
+  }
+  @media (max-width: 853px) {
+    body {
+      font-size: 10px;
+    }
+    main {
+      width: 700px;
+    }
+    h1 {
+      font-size: 1.3rem;
+    }
+    .description {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .author-social-icon {
+      right: -180px;
+    }
+  }
+  @media (max-width: 781px) {
+    .author-social-icon {
+      right: -160px;
+    }
+  }
+  @media (max-width: 740px) {
+    body {
+      font-size: 16px;
+    }
+    main {
+      flex-direction: column;
+      width: 500px;
+      margin: 5rem 0;
+    }
+    .img-container {
+      height: 300px;
+      width: 100%;
+    }
+    .img-container img {
+      border-top-right-radius: 0.8rem;
+      border-top-left-radius: 0.8rem;
+      border-bottom-left-radius: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .articel-container {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      padding: 2rem;
+      padding-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .description {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+  
+    .author-social-icon {
+      background-color: hsl(217, 19%, 35%);
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      box-shadow: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: static;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      margin-bottom: -1rem;
+      transform: translate(0, 0);
+      animation: fadeInFromRight 1s ease-in-out;
+
+    }
+    @keyframes fadeInFromRight {
+      from {
+          opacity: 0;
+          transform: translateX(70px);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+    .share-icon {
+      display: none;
+    }
+    .share-icon2 {
+      /* margin-right: 2rem; */
+      display: block;
+    }
+    .share img {
+      display: block;
+    }
+    .author-details{
+        margin-top: -2rem;
+        margin-bottom: 10px;
+    }
+    .author-description {
+      padding: 0 2rem;
+    }
+  }
+  @media (max-width: 540px) {
+    main {
+      width: 400px;
+    }
+  }
+  @media (max-width: 375px) {
+    body{
+        padding: 30px 10px;
+    }
+    
+    main {
+      width: 90%;
+      margin: 0;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .content {
+      padding: 2rem 1rem;
+      width: 100%;
+    }
+    .articel-container {
+      padding: 0rem;
+      width: 100%;
+      height: 100%;
+    }
+    .author-description {
+      padding: 0 1rem;
+    }
+    .img-container img {
+      border-radius: 0;
+    }
+  }
+  
+  
+  /* THE MEDIA QUERY FOR THE MOBILE SECTION  */
+  
