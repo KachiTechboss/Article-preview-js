@@ -15,6 +15,7 @@ body {
     border-radius: 0.8rem;
     box-shadow: 10px 10px 32px rgba(72, 85, 106, 0.1);
     width: 800px;
+    overflow-x: hidden;
   
     display: flex;
   }
@@ -92,7 +93,6 @@ body {
     animation: bubbleHop 1.75s ease-in-out;
     animation-delay: 1.25s;
     animation-iteration-count: infinite;
-    overflow-x: hidden;
   }
   .author-social-icon:hover{
     animation-play-state: paused;
@@ -191,6 +191,7 @@ body {
       flex-direction: column;
       width: 500px;
       margin: 5rem 0;
+      overflow-x: hidden;
     }
     .img-container {
       height: 300px;
